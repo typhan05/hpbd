@@ -2,7 +2,7 @@
   'use strict';
   function typingHappy() {
     var options = {
-      strings: ['Có được vợ trong cuộc đời này là một điều thật tuyệt vời và may mắn nhất đối với anh. Cảm ơn vợ đã luôn ở bên ủng hộ và quan tâm anh. Chúc vợ meo yêu có một ngày sinh nhật tuyệt vời, một tuổi mới với nhiều may mắn, sức khoẻ, thành công và ngày càng xinh đẹp vợ nhé!'],
+      strings: ['Có được vợ trong cuộc đời này là một điều tuyệt vời và may mắn nhất đối với anh. Cảm ơn vợ đã luôn ở bên ủng hộ và quan tâm anh. Chúc vợ meo yêu có một ngày sinh nhật tuyệt vời, một tuổi mới với nhiều may mắn, sức khoẻ, thành công và ngày càng xinh đẹp vợ nhé!'],
       typeSpeed: 30
     };
     var typed = new Typed('#intro', options);
