@@ -1,3 +1,23 @@
+html {
+    font-size: 14px;
+}
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html {
+        font-size: 1.1rem;
+    }
+}
+@media screen and (min-width: 1792px) {
+    html {
+        font-size: 16px;
+    }
+}
+
 body {
     font-family: "Lobster", cursive;
     margin: 0;
@@ -10,30 +30,44 @@ body {
 }
 
 #intro {
-    padding: 40px;
+    padding: 2.5rem;
     color: #ffffff;
-    font-size: 22px;
+    font-size: 1.8rem;
     line-height: 1.4;
 }
 
 .top-text {
     position: relative;
-    width: 480px;
-    height: 265px;
-    margin: 0 auto 30px;
+    width: 100%;
+    height: 25.5rem;
+    margin: 0 auto 1.87rem;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .top-text {
+        width: 30rem;
+        height: 16.5rem;
+        margin: 0 auto 1.87rem;
+    }
 }
 
 #myVideo {
     display: block;
-    width: 520px;
+    width: 100%;
     margin: 0 auto;
 }
 
 .group-video {
     position: relative;
-    width: 520px;
+    width: 85%;
     margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+    .group-video {
+        width: 32.5rem;
+    }
 }
 
 .group-video .img {
@@ -41,31 +75,55 @@ body {
 }
 
 .group-video .img-2 {
-    max-width: 100px;
+    max-width: 4.25rem;
     top: -5%;
     right: 92%;
     transform: rotate(20deg);
+}
+
+@media screen and (min-width: 768px) {
+    .group-video .img-2 {
+        max-width: 6.25rem;
+    }
 }
 
 .group-video .img-3 {
-    max-width: 100px;
+    max-width: 4.25rem;
     top: -5%;
-    left: 92%;
+    left: 94%;
     transform: rotate(-20deg);
 }
 
+@media screen and (min-width: 768px) {
+    .group-video .img-3 {
+        max-width: 6.25rem;
+    }
+}
+
 .group-video .img-4 {
-    max-width: 120px;
+    max-width: 4.5rem;
     bottom: -5%;
     right: 92%;
     transform: rotate(-20deg);
 }
 
+@media screen and (min-width: 768px) {
+    .group-video .img-4 {
+        max-width: 7.5rem;
+    }
+}
+
 .group-video .img-5 {
-    max-width: 120px;
+    max-width: 4.5rem;
     bottom: -5%;
     left: 92%;
     transform: rotate(20deg);
+}
+
+@media screen and (min-width: 768px) {
+    .group-video .img-5 {
+        max-width: 7.5rem;
+    }
 }
 
 
@@ -75,15 +133,13 @@ body {
     top: 0;
     height: 100%;
     width: 100%;
-    max-height: 100%;
-    overflow-y: auto;
+    overflow: hidden;
     z-index: 1;
 }
 
 .section-1 {
     height: 100vh;
     width: 100%;
-    overflow: hidden;
 }
 .section-1::after {
     content: '';
@@ -231,4 +287,54 @@ svg circle {
     to {
         stroke-dashoffset: 113px;
     }
+}
+
+.boxtext {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 80%;
+    font-size: 28px;
+}
+
+.boxtext span {
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    animation: bounce 0.3s ease infinite alternate;
+}
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px #ccc, 0 2px #ccc, 0 3px #ccc, 0 4px #ccc, 0 5px #ccc,
+        0 6px #ccc, 0 7px #ccc, 0 8px #ccc, 0 9px #ccc,
+        0 50px 25px rgba(0, 0, 0, 0.2);
+    }
+}
+.boxtext {
+    color: #fff;
+    text-shadow: 0 1px #ccc, 0 2px #ccc, 0 3px #ccc, 0 4px #ccc, 0 5px #ccc,
+    0 6px 0 transparent, 0 7px transparent, 0 8px transparent, 0 9px transparent,
+    0 10px 10px rgba(0, 0, 0, 0.4);
+}
+.boxtext span:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.boxtext span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.boxtext span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.boxtext span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.boxtext span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.boxtext span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+.boxtext span:nth-child(8) {
+    animation-delay: 0.7s;
 }

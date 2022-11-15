@@ -10,6 +10,7 @@
   function autoNext() {
     setTimeout(function() {
       $('.section-2').addClass('show');
+      $('#myVideo').get(0).pause();
     }, 30000);
   }
   function countDown() {
