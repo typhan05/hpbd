@@ -46,13 +46,19 @@ body {
 
 @media screen and (min-width: 768px) {
     .top-text {
-        width: 30rem;
+        width: 40rem;
         height: 16.5rem;
         margin: 0 auto 1.87rem;
     }
 }
 
 #myVideo {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img-video {
     display: block;
     width: 100%;
     margin: 0 auto;
